@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+// 1. Imported a generic theme for my app
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+
+// 2. Added some BASIC RESETS
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
