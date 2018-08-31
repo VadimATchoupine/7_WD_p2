@@ -14,11 +14,10 @@ body {
 .container {
     margin: 20px;
     display: flex;
+    
+    // 4. TEMP settings - Menu items
+    h1,
+    p,
+    span { color: whitesmoke; }
 }
 
-// 4. TEMP settings - Menu items
-h1,
-p,
-span {
-    color: black;
-}
