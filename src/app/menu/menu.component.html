@@ -1,0 +1,23 @@
+<!-- 1. Use Flex Layout for our Menu component -->
+<!-- 1.1. Container w/ fxlayout style and gap -->
+<div  class="container"
+      fxLayout="column"
+      fxLayoutGap="10px">
+
+  <!-- 1.2. Material List -->
+
+  <mat-list fxFlex>
+    <!-- 1.2.1. Material List Item with Structural Directive ngFor -->
+    <mat-list-item *ngFor="let dish of dishes">
+      <!-- 1.2.1.a - img -->
+      <img matListAvatar src="{{dish.image}}" alt="{{dish.name}}}">
+      <!-- 1.2.1.b - header -->
+      <h1 matLine> {{dish.name}} </h1>
+      <!-- 1.2.1.c - paragraph with span -->
+      <p matLine><span> {{dish.description}} </span></p>
+    </mat-list-item>
+
+  </mat-list>
+
+</div>
+ 

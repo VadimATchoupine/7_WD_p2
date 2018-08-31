@@ -3,21 +3,26 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { NgModule } from '@angular/core';
 
 import { MatToolbarModule } from '@angular/material/toolbar'; // 2. Imported Material Toolbar Module
+import { MatListModule } from '@angular/material/list'; // 6. Imported Material List Module to use it in app
 import { FlexLayoutModule } from '@angular/flex-layout'; // 3. Imported Flex-Layout Module
+
 
 import 'hammerjs'; // 4. Imported HammerJS
 
 import { AppComponent } from './app.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent
   ],
   imports: [  // 5. updated JS object with modules which should be imported for root or AppModule component
     BrowserModule,
     BrowserAnimationsModule,  // 5.1
     MatToolbarModule,         // 5.2
-    FlexLayoutModule          // 5.3
+    FlexLayoutModule,         // 5.3
+    MatListModule             // 7 updated JS object with MatList Module for my menu
   ],
   providers: [],
   bootstrap: [AppComponent]
