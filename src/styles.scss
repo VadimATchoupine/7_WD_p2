@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 // 1. Imported a generic theme for my app
-@import '~@angular/material/prebuilt-themes/purple-green.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 // 2. Added some BASIC RESETS
 body {
@@ -14,10 +14,5 @@ body {
 .container {
     margin: 20px;
     display: flex;
-    
-    // 4. TEMP settings - Menu items
-    h1,
-    p,
-    span { color: whitesmoke; }
 }
 

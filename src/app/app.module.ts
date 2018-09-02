@@ -14,11 +14,13 @@ import 'hammerjs'; // 4. Imported HammerJS
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
+import { DishdetailComponent } from './dishdetail/dishdetail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    DishdetailComponent
   ],
   imports: [  // 5. updated JS object with modules which should be imported for root or AppModule component
     BrowserModule,

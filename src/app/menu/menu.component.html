@@ -28,26 +28,9 @@
     </mat-grid-list>
   </div>
 
-  <!-- 1.4. Material Card -->
-  <!-- 1.4.1. flex wrapper w/ structural directive If -->
-  <div fxFlex *ngIf="selectedDish">
-    <!-- 1.4.1.1. Material Card -->
-    <mat-card>
-      <!-- 1.4.1.1.a - header -->
-      <mat-card-header>
-        <mat-card-title><h3>{{ selectedDish.name | uppercase }}</h3></mat-card-title>
-      </mat-card-header>
-      <!-- 1.4.1.1.b - img -->
-      <img mat-card-image src="{{ selectedDish.image }}" alt="{{ selectedDish.name }}">
-      <!-- 1.4.1.1.c - content -->
-      <mat-card-content><p>{{ selectedDish.description }}</p></mat-card-content>
-      <!-- 1.4.1.1.d - actions -->
-      <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions>
-    </mat-card>
-  </div>
+  <!-- 2. Dishdetail component -->
+  <app-dishdetail></app-dishdetail>
+
 
 </div>
  

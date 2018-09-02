@@ -6,4 +6,10 @@ export class Dish {
     label: string;
     price: string;
     description: string;
+    // comments: {
+    //     rating: number;
+    //     comment: string;
+    //     author: string;
+    //     date: DateTimeFormat;
+    // };
 }
