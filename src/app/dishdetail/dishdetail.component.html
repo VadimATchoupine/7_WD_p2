@@ -30,17 +30,17 @@
   </div>
 
   <!-- 1.b section 2 -->
-  <div fxFlex="40">
-    <!-- 1.b.1. Header -->
-    <h2>{{ title }}</h2>
-    <!-- 1.b.2. List -->
-    <mat-list>
+  <div fxFlex="40" >
+    <!-- 1.b.1. List -->
+    <mat-list *ngIf="dish">
+      <!-- 1.b.2. Header -->
+      <h2>{{ title }}</h2>
       <!-- 1.b.2.1. List Item w/ iteration and 3 lines-->
-      <mat-list-item *ngFor="let i of dish.comments">
-        <h3 matLine>{{ i.comment }}</h3>
-        <p matLine>{{ i.rating }} Stars</p>
+      <mat-list-item *ngFor="let comment of dish.comments">
+        <h3 matLine>{{ comment.comment }}</h3>
+        <p matLine>{{ comment.rating }} Stars</p>
         <p matLine>
-          <span> -- {{ i.author }} {{ i.date | date }} </span>
+          <span> -- {{ comment.author }} {{ comment.date | date }} </span>
         </p>
       </mat-list-item>
     </mat-list>

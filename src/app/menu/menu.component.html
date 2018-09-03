@@ -19,7 +19,7 @@
     <!-- 1.3.2. grid list -->
     <mat-grid-list cols="2" rowHeight="200px">
       <!-- 1.3.2.1. grid tile (or element) -->
-      <mat-grid-tile *ngFor="let dish of dishes">
+      <mat-grid-tile *ngFor="let dish of dishes" (click)='onSelect(dish)'>
         <!-- 1.3.2.1.a - img -->
         <img src="{{dish.image}}" alt="{{dish.name}}" height="200px">
         <!-- 1.3.2.1.b - footer -->
@@ -29,7 +29,7 @@
   </div>
 
   <!-- 2. Dishdetail component -->
-  <app-dishdetail></app-dishdetail>
+  <app-dishdetail [dish]='selectedDish'></app-dishdetail>
 
 
 </div>
