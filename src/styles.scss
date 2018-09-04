@@ -2,6 +2,29 @@
 
 // 1. Imported a generic theme for my app
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+// 4. Import _variables and font-awesome
+@import 'variables';    // nb: ref to _variables.scss file
+@import '../node_modules/font-awesome/scss/font-awesome';
+
+
+// 5. Variables and Mixins
+$lt-gray: #ddd;
+$background-dark: #512DA8;
+$background-light: #9575CD;
+$background-pale: #D1C4E9;
+$primary-color-dark:   #512DA8;
+$primary-color:        #673AB7;
+$primary-color-light:  #D1C4E9;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #FFC107;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
 
 // 2. Added some BASIC RESETS
 body {
@@ -16,3 +39,17 @@ body {
     display: flex;
 }
 
+// 6.
+.background-primary {
+    background-color: $background-dark!important;
+  }
+.background-accent {
+    background-color: $accent-color!important;
+  }
+.text-floral-white {
+    color: floralwhite!important;
+}
+
+.flex-spacer {
+  flex: 1 1 auto;
+}
