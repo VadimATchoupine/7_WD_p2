@@ -9,15 +9,21 @@ import { MatCardModule } from '@angular/material/card'; // 9. Imported Material 
 import { MatButtonModule } from '@angular/material/button'; // 10. Imported MAterial Button Module
 import { FlexLayoutModule } from '@angular/flex-layout'; // 3. Imported Flex-Layout Module
 
+import { AppRoutingModule } from './app-routing/app-routing.module'; // 16. 
 
 import 'hammerjs'; // 4. Imported HammerJS
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
-import { DishService } from './services/dish.service'; // 14. imported service
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';  
+import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+
+import { DishService } from './services/dish.service'; // 14. imported service
+
 
 @NgModule({
   declarations: [
@@ -25,7 +31,10 @@ import { FooterComponent } from './footer/footer.component';
     MenuComponent,
     DishdetailComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent,
+    HomeComponent,
+    ContactComponent
   ],
   imports: [  // 5. updated JS object with modules which should be imported for root or AppModule component
     BrowserModule,
@@ -35,7 +44,8 @@ import { FooterComponent } from './footer/footer.component';
     MatListModule,            // 7 updated JS object with MatList Module for my menu
     MatGridListModule,        // 11
     MatCardModule,            // 12
-    MatButtonModule           // 13
+    MatButtonModule,          // 13
+    AppRoutingModule          // 17.
   ],
   providers: [DishService], // 15. added service
   bootstrap: [AppComponent]
