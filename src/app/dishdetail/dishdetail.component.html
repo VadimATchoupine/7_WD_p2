@@ -1,6 +1,19 @@
+
+<!-- NB -->
+<!-- fxLayout="row wrap" -->
+  <!-- <div fxFlex="100"> -->
+    <!-- <div>
+      <h3>{{dish.name | uppercase}}</h3>
+      <hr>
+    </div>
+  </div> -->
+
+
+
+
 <!-- 1. container -->
 <div class="container"
-    fxLayout="row"
+    fxLayout="row wrap"
     fxLayout.sm="column"
     fxLayout.xs="column"
     fxLayoutAlign.gt-md="space-around center"
@@ -8,7 +21,7 @@
     fxLayoutGap.xs="0">
 
   <!-- 1.a section 1 -->
-  <div fxFlex="40" *ngIf="dish">
+  <div fxFlex="100">
   <!-- 1.a.1. Material Card -->
   <!-- 1.a.1.1. flex wrapper w/ structural directive If -->
       <!-- 1.a.1.1.1. Material Card -->
@@ -23,6 +36,7 @@
         <mat-card-content><p>{{ dish.description }}</p></mat-card-content>
         <!-- 1.a.1.1.1.d - actions -->
         <mat-card-actions>
+          <button mat-button (click)="goBack()">BACK</button> <!-- NB -->
           <button mat-button>LIKE</button>
           <button mat-button>SHARE</button>
         </mat-card-actions>
