@@ -13,5 +13,6 @@ export const routes: Routes = [
     // 4.
     { path: 'home',  component: HomeComponent },
     { path: 'menu',     component: MenuComponent },
+    { path: 'contuctus', component: ContactComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' }    // default path w/ redirection
 ];

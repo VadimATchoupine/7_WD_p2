@@ -10,6 +10,7 @@
 // 5. Variables and Mixins
 $lt-gray: #ddd;
 $background-dark: #512DA8;
+$background-moredark: #4527A0;  // 7.
 $background-light: #9575CD;
 $background-pale: #D1C4E9;
 $primary-color-dark:   #512DA8;
@@ -52,4 +53,9 @@ body {
 
 .flex-spacer {
   flex: 1 1 auto;
+}
+
+// 8.
+.active {
+    background: $background-moredark;
 }
